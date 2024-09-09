@@ -1,0 +1,26 @@
+{
+  "name": "@lumjs/build",
+  "version": "1.0.0",
+  "bin":
+  {
+    "lum-build": "./bin/build.js"
+  },
+  "exports":
+  {
+    "./jsdoc-rules": "./lib/jsdoc-rules.js",
+    "./meta-docs": "./lib/meta-docs.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": 
+  {
+    "@lumjs/core": "^1.31.0",
+    "docdash": "^2.0.2",
+    "marked": "^14.1.0"
+  },
+  "license": "MIT",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/supernovus/lum.build.js.git"
+  }
+}
