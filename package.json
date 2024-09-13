@@ -1,6 +1,6 @@
 {
   "name": "@lumjs/build",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "bin":
   {
     "lum-build": "./bin/build.js"
@@ -9,6 +9,7 @@
   {
     "./jsdoc-rules": "./lib/jsdoc-rules.js",
     "./meta-docs": "./lib/meta-docs.js",
+    "./rule-builder": "./lib/rule-builder.js",
     "./package.json": "./package.json"
   },
   "dependencies": 
