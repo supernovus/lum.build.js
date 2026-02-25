@@ -2,23 +2,22 @@
 // Must be run from the project root!
 "use strict";
 
-const process = require('node:process');
-const cwd = process.cwd();
+const { cwd, path } = require('../lib/runtime');
 const md = require('../lib/meta-docs');
 const Builder = require('../lib/rule-builder');
-const {F,isObj} = require('@lumjs/core/types/basics');
-const rulesConf = require(cwd+'/lum.build');
+const { isObj } = require('@lumjs/core/types/basics');
+const rulesConf = require(path.join(cwd, 'lum.build'));
 
 let rules, retval = null;
 
-if (typeof rulesConf === F)
+if (typeof rulesConf === 'function')
 {
   rules = new Builder();
   retval = rulesConf.call(md, rules);
 }
 else if (isObj(rulesConf))
 { 
-  if (typeof rulesConf.run === F)
+  if (typeof rulesConf.run === 'function')
   {
     rules = new Builder(rulesConf);
     retval = rulesConf.run(rules, md);

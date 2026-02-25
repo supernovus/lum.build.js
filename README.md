@@ -10,6 +10,10 @@ builder with a bunch of my own default rules.
 As I'm planning to support ES modules and possibly Typescript in the future,
 this will be the package that gets the build tools for doing any transpiling.
 
+## TODO
+
+I want to overhaul this significantly, making a cleaner, more modular API.
+
 ## Official URLs
 
 This library can be found in two places:
