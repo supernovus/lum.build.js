@@ -12,7 +12,8 @@ this will be the package that gets the build tools for doing any transpiling.
 
 ## TODO
 
-I want to overhaul this significantly, making a cleaner, more modular API.
+- I want to overhaul this significantly, making a cleaner, more modular API.
+- Rewrite jsdoc-rules to remove deprecated `cp()` and `def()` functions.
 
 ## Official URLs
 
